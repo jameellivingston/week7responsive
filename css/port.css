@@ -1,0 +1,248 @@
+body {
+    background: linear-gradient(to bottom, #e8eff0 0%, #cdd6d9 100%) !important;
+    color: #000000 !important;
+}
+
+
+
+/* White Nav Bar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex !important;
+    align-items: center !important;
+    padding-right: 5rem !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Jameel's Designs*/
+.Jameelsdesigns {
+    position: absolute;
+    left: 6rem;
+    z-index: 10;
+}
+
+.Jameelsdesigns h1 {
+    color: #4b4941;
+    font-family: Verdana sans-serif;
+    font-size: 1.2em;
+    font-style: bold;
+    margin: 0;
+
+        /* Gradient */
+    background: linear-gradient(to top, #2d2c27 0%, #655f4f 50%, #2a2926 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+   
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.15)); 
+}
+
+/* Nav Menu Wrap */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Horizontal List Alignment */
+.nav-list {
+    list-style: none !important;
+    display: flex !important;
+    gap: 3rem;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+/* Link Styles */
+.nav-link {
+    color: #434f45;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;    
+    transition: color 0.2s ease;
+    text-align: center; 
+}
+
+/* Web Layout */
+.web-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 110px 2rem 4rem 2rem;
+    box-sizing: border-box;
+    background: transparent !important;
+}
+
+/* Glass */
+.glass-container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+       
+    /* Glass Style */
+    background: rgba(255, 255, 255, 0.15) !important; 
+    backdrop-filter: blur(16px); 
+    -webkit-backdrop-filter: blur(16px);
+    
+    /* Glass Body */
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05); 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Left Column */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 5rem;
+}
+
+.left-column h2 {
+    font-family: Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #696360;
+    margin-bottom: 1rem;
+}
+
+     /* Gradient */
+     .left-column h2 .gradient {
+    background: linear-gradient(to bottom, #96846b 0%, #8a7960 50%, #40372d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Drop shadow */
+    filter: drop-shadow(0px 1px 1px rgba(93, 78, 60, 0.50));
+}
+
+.left-column p {
+    font-family: Verdana, sans-serif;
+    font-size: .75rem;
+    line-height: 1.6;
+    color: #696360;
+    max-width: 550px;
+    margin: 0;
+}
+
+/* Right Column */
+.right-column {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 5rem;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 100%;
+    max-width: 450px;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* Contact form style */
+.contact-form h3 {
+    font-family: Verdana, sans-serif;
+    font-size: 1.55rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #696360;
+    text-transform: uppercase;
+    margin: 0 0 3rem 0;
+}
+
+.cf-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+
+.form-options label {
+    font-family: Verdana, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #696360;
+    letter-spacing: 0.02em;
+}
+
+/* CF Background */
+.form-options input,
+.form-options textarea {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-family: Verdana, sans-serif;
+    font-size: 0.95rem;
+    border: none !important;
+    border-bottom: 1px solid rgba(42, 41, 38, 0.3) !important;
+    background-color: transparent !important;
+    outline: none !important;
+    color: #696360;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-options textarea {
+    resize: none;
+}
+
+/* Hover Effect */
+.form-options input:hover,
+.form-options textarea:hover {
+    border-bottom-color: rgba(42, 41, 38, 0.5) !important;
+}
+
+/* CF Input Line */
+.form-options input:focus,
+.form-options textarea:focus {
+    border-bottom: 2px solid #1e1e1c !important;
+    padding-bottom: 0.45rem; /* Offsets the 2px line thickness jump to prevent text shifting */
+}
+
+/* Submit Button */
+.submit-btn {
+    align-self: flex-start;
+    padding: 0.85rem 3.5rem;
+    background-color: #696360;
+    color: #ffffff;
+    font-family: Verdana, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #657680;
+}
