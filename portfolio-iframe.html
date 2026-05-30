@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jameels Designs - Portfolio Content</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+        <style>
+            /* Transparent BG */
+            html, body {
+                background: transparent !important;
+                margin: 0;
+                padding: 10px;
+            }
+
+            /* Font */
+            h1, h2, h3, h4, h5, h6, p, article {
+                font-family: Verdana, sans-serif !important;
+                color: #696360 !important;
+            }
+
+            /* 3. CRITICAL GRID FIX: Keeps images from breaking out of column boundaries */
+            article img {
+                width: 100% !important;
+                height: 250px !important; /* Forces uniform grid card matching heights */
+                object-fit: cover !important; /* Crops cleanly instead of squishing images */
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+                display: block;
+                transition: transform 0.2s ease;
+            }
+
+            article img:hover {
+                transform: scale(1.02); /* Clean micro-interaction feedback */
+            }
+
+            article {
+                margin-bottom: 24px;
+            }
+
+            h4 {
+                font-weight: 600 !important;
+                font-size: 1rem !important;
+                margin-bottom: 8px !important;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Portfolio Clean Grid Layout -->
+        <div class="w3-row-padding">
+            
+            <!-- Item 1 -->
+            <article class="w3-col s12 m4 l4">
+                <h4>Evisu</h4>
+                <a href="assets/evisu-300dpi.png">
+                <img src="assets/evisu-300dpi.png" alt="Photo of Evisu">
+                </a>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="w3-col s12 m4 l4">
+                <h4>Desk</h4>
+                <a href="assets/desk-300dpi.jpg">
+                    <img src="assets/desk-300dpi.jpg" alt="Photo of desk">
+                </a>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="w3-col s12 m4 l4">
+                <h4>Gundam Mask</h4>
+                <a href="assets/mask-300dpi.jpg">
+                <img src="assets/mask-300dpi.jpg" alt="Photo of Gundam">
+            </article>
+
+            <!-- Item 4 -->
+            <article class="w3-col s12 m4 l4">
+                <h4>Forgiato</h4>
+                <a href="assets/forgiato-300dpi.jpg">
+                <img src="assets/forgiato-300dpi.jpg" alt="Photo of Forgiato">
+            </article>
+            
+        </div>
+
+    </body>
+</html>
