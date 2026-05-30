@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jameels Designs</title>
+    <link rel="stylesheet" href="https://use.typekit.net/cvj8szv.css">
+    <link rel="stylesheet" href="css/port.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+
+
+
+<style>
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+            position: absolute;
+            right: 2rem;
+            z-index: 100;
+        }
+
+        .nav-toggle .bar {
+            height: 3px;
+            width: 100%;
+            background-color: #434f45;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+
+            .main-nav {
+                position: fixed;
+                top: 0;
+                right: -100%; 
+                width: 100%;
+                height: 100vh;
+                background-color: #ffffff;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: right 0.4s ease-in-out;
+                z-index: 90;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 2.5rem;
+            }
+
+            .nav-link {
+                font-size: 1.25rem;
+            }
+
+            .main-nav.active {
+                right: 0;
+            }
+
+            .nav-toggle.active .bar:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+
+            .nav-toggle.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav-toggle.active .bar:nth-child(3) {
+                transform: translateY(-9px) rotate(-45deg);
+            }
+            
+            .glass-container {
+                flex-direction: column;
+            }
+            .left-column, .right-column {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+ <!-- Nav Bar -->
+    <header class="navbar">
+        
+        <!-- Jameel's Designs -->
+        <div class="Jameelsdesigns">
+            <h1>Jameels Designs</h1>
+        </div>
+
+        <!-- Nav Links -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">home</a></li>
+                <li><a href="portfolio.html" class="nav-link">portfolio</a></li>
+                <li><a href="resume.html" class="nav-link">resume</a></li>
+                <li><a href="about.html" class="nav-link">about</a></li>
+            </ul>
+        </nav>
+
+         <!-- Hamburger -->
+        <button class="nav-toggle" id="menu-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+    </header>
+
+    <!-- Web Layout -->
+<main class="web-layout">
+
+    <!-- Glass -->
+    <div class="glass-container">
+    
+    <!-- Left Column: Intro para -->
+    <div class="left-column">
+        <h2>Hi, i'm <span class="gradient">Jameel</span></h2>
+        <p>Hi, I'm Jameel. I craft digital experiences that blend utility with human-centric design. Specializing in building clean code bases, intuitive user flows, and modern minimalist interfaces from scratch.</p>
+    </div>
+
+    <!-- Right Column: Contact Form Panel -->
+    <div class="right-column">
+        <div class="contact-form">
+            <h3>Contact Me</h3>
+            <form class="cf-layout" action="https://api.web3forms.com/submit" method="post">
+                 <input type="hidden" name="access_key" value="2bd0f61b-0e03-4444-8f38-a0a289bacf0f">
+                <div class="form-options">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-options">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                </div>
+                <div class="form-options">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</main>
+
+
+    <script src="js/hamburger.js"></script>
+
+
+
+</body>
+</html>
